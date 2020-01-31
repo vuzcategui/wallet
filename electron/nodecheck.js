@@ -8,12 +8,12 @@ const NodeChecker = require('./nodeChecker');
 const log = require('./logger');
 
 const headers = {
-  'User-Agent': `WebchainWallet/${app.getVersion()}`,
+  'User-Agent': `MintMeCoinWallet/${app.getVersion()}`,
 };
 
 function initFetcher() {
   const details = [os.platform(), os.release(), os.arch(), app.getLocale()].join('; ');
-  headers['User-Agent'] = `Electron/${process.versions.electron} (${details}) WebchainWallet/${app.getVersion()} (+https://webchain.network) Chrome/${process.versions.chrome} node-fetch/1.0`;
+  headers['User-Agent'] = `Electron/${process.versions.electron} (${details}) MintMeCoinWallet/${app.getVersion()} (+https://mintme.com/coin) Chrome/${process.versions.chrome} node-fetch/1.0`;
 }
 
 function check(url) {
