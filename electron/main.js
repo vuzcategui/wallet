@@ -38,7 +38,7 @@ startProtocolHandler();
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', () => {
-  log.info('Starting Webchain', app.getVersion());
+  log.info('Starting MintMe Coin', 'v'+app.getVersion());
   const browserWindow = mainWindow.createWindow(isDev);
   const services = new Services(browserWindow.webContents);
   ipc({ settings, services });
