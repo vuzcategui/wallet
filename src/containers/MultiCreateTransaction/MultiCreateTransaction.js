@@ -226,7 +226,7 @@ class MultiCreateTransaction extends React.Component {
 export default connect(
   (state, ownProps) => {
     const {account} = ownProps;
-    const allTokens = state.tokens.get('tokens').concat([fromJS({address: '', symbol: 'WEB', name: 'WEB'})]).reverse();
+    const allTokens = state.tokens.get('tokens').concat([fromJS({address: '', symbol: 'MINTME', name: 'MINTME'})]).reverse();
     const gasPrice = state.network.get('gasPrice');
 
     const fiatRate = state.wallet.settings.get('localeRate');
@@ -244,11 +244,11 @@ export default connect(
       amount: ownProps.amount || '0',
       gasLimit: DEFAULT_GAS_LIMIT,
       typedData: ownProps.typedData,
-      token: 'WEB',
+      token: 'MINTME',
       selectedFromAccount: account.get('id'),
       data: ownProps.data,
       getBalanceForAddress: (address, token) => {
-        if (token === 'WEB') {
+        if (token === 'MINTME') {
           const selectedAccount = state.accounts.get('accounts').find((acnt) => acnt.get('id') === address);
           const newBalance = selectedAccount.get('balance');
           return newBalance.getEther().toString();
@@ -257,7 +257,7 @@ export default connect(
         return Tokens.selectors.balanceByTokenSymbol(state.tokens, token, address).getDecimalized();
       },
       getFiatForAddress: (address, token) => {
-        if (token !== 'WEB') { return '??'; }
+        if (token !== 'MINTME') { return '??'; }
         const selectedAccount = state.accounts.get('accounts').find((acnt) => acnt.get('id') === address);
         const newBalance = selectedAccount.get('balance');
         return newBalance.getFiat(fiatRate).toString();
@@ -301,7 +301,7 @@ export default connect(
         );
       }
 
-      if (transaction.token !== 'WEB') {
+      if (transaction.token !== 'MINTME') {
         const decimals = convert.toNumber(tokenInfo.get('decimals'));
         const tokenUnits = convert.toBaseUnits(convert.toBigNumber(transaction.amount), decimals || 18);
         const txData = Tokens.actions.createTokenTxData(
