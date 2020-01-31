@@ -55,7 +55,7 @@ const ReceiveDialog = ({ account, onClose, classes }) => {
       onRequestClose={ onClose }>
       <div className={ classes.container }>
         <div>
-          <div className={ classes.title }>Add WEB</div>
+          <div className={ classes.title }>Add MINTME</div>
           <div style={{marginTop: '30px' }}>
             <QRCode value={ address } size={ qrCodeSize }/></div>
         </div>
@@ -64,12 +64,12 @@ const ReceiveDialog = ({ account, onClose, classes }) => {
             <CloseButton onClick={ onClose } />
           </div>
           <div style={{marginTop: '30px', marginLeft: '30px'}}>
-            <div className={ classes.headerText }>Top up your account with WEB</div>
+            <div className={ classes.headerText }>Top up your account with MINTME</div>
             <div>
               <AccountAddress id={ address } style={ styles.address }/>
             </div>
             <div className={ classes.note }>
-              Share your account address and use it to top up your account with WEB from any other service.
+              Share your account address and use it to top up your account with MINTME from any other service.
               It may take some time for your coins be deposited.
             </div>
           </div>
