@@ -31,16 +31,16 @@ const Landing = ({
               <div style={{
                 display: 'flex', alignItems: 'center', marginLeft: '80px', marginTop: '60px',
               }}>
-                <div style={{fontWeight: '500', marginLeft: '80px', color: muiTheme.palette.primary1Color}}>WELCOME TO WEBCHAIN WALLET</div>
+                <div style={{fontWeight: '500', marginLeft: '80px', color: muiTheme.palette.primary1Color}}>WELCOME TO MINTME COIN WALLET</div>
               </div>
               <br />
               <div style={{marginLeft: '150px', padding: '10px', maxWidth: '700px'}}>
                 <span style={{color: muiTheme.palette.primary3Color, fontWeight: '200'}}>
-      Webchain Wallet runs on the webchain network, which is a decentralized platform based on Ethereum Classic. Webchain is a ERC20 & ERC223 Smart Contracts and DApps enabled blockchain, secured by Websites and Internet of Things.
+      MintMe Coin Wallet runs on the webchain network, which is a decentralized platform based on Ethereum Classic. MintMe Coin is a ERC20 & ERC223 Smart Contracts and DApps enabled blockchain, secured by Websites and Internet of Things.
                 </span>
                 <br />
                 <br />
-                <Button href="https://webchain.network/" target="_blank" rel="noreferrer noopener" label="More about Webchain" />
+                <Button href="https://mintme.com/coin" target="_blank" rel="noreferrer noopener" label="More about MintMe Coin" />
                 <br />
                 <br />
                 <Button primary onClick={onGenerate} label="Generate New Account" />
