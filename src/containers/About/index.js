@@ -5,15 +5,15 @@ import About from './About';
 class AboutClass extends React.Component {
   render() {
     const helpClick = () => {
-      const url = 'https://webchain.network/faq';
+      const url = 'https://mintme.com/';
       shell.openExternal(url);
     };
     const licenseClick = () => {
-      const url = 'https://github.com/webchain-network/webchain-wallet/blob/master/LICENSE';
+      const url = 'https://github.com/webchain-network/wallet/blob/master/LICENSE';
       shell.openExternal(url);
     };
     const onButtonClick = () => {
-      const url = 'https://webchain.network/';
+      const url = 'https://mintme.com/coin';
       shell.openExternal(url);
     };
     return (
