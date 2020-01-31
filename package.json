@@ -1,12 +1,12 @@
 {
-  "name": "WebchainWallet",
+  "name": "MintMeCoinWallet",
   "author": {
-    "name": "Webchain Network",
-    "email": "support@webchain.network"
+    "name": "MintMe Coin Wallet",
+    "email": "support@mintme.com"
   },
   "private": false,
-  "version": "1.2.2",
-  "description": "Webchain - Webchain Network Wallet",
+  "version": "1.2.3",
+  "description": "MintMe.com - MintMe Coin Wallet",
   "main": "./electron/main.js",
   "moduleRoots": [
     "src/lib"
@@ -36,20 +36,22 @@
     "blockchain",
     "material design",
     "material-ui",
-    "webchain",
-    "webchain network",
+    "mitnme",
+    "mintme.com",
+    "mintme coin",
+    "mintme coin wallet",
     "web",
     "dapp"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/webchain-network/webchain-wallet.git"
+    "url": "https://github.com/webchain-network/wallet.git"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/webchain-network/webchain-wallet/issues"
+    "url": "https://github.com/webchain-network/wallet/issues"
   },
-  "homepage": "https://github.com/webchain-network/webchain-wallet",
+  "homepage": "https://github.com/webchain-network/wallet",
   "dependencies": {
     "@emeraldplatform/contracts": "0.4.1",
     "@emeraldplatform/emerald-js": "0.4.3",
@@ -89,9 +91,9 @@
     "prop-types": "^15.4.2",
     "qrcode.react": "0.7.2",
     "qs": "^6.5.2",
-    "react": "16.7.0",
+    "react": "16.3.2",
     "react-addons-test-utils": "^15.6.0",
-    "react-dom": "16.7.0",
+    "react-dom": "16.3.3",
     "react-dropzone": "^3.12.2",
     "react-event-listener": "^0.4.5",
     "react-flexbox-grid": "2.1.2",
