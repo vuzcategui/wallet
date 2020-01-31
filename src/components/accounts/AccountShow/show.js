@@ -95,7 +95,7 @@ export class AccountShow extends React.Component {
                     showFiat={ showFiat }
                     coinsStyle={{fontSize: '20px', lineHeight: '24px'}}
                     balance={ balance }
-                    symbol="WEB"
+                    symbol="MINTME"
                   />
                 </div>
               </Row>
@@ -146,7 +146,7 @@ export class AccountShow extends React.Component {
                     <ButtonGroup>
                       <Button
                         primary
-                        label="Add WEB"
+                        label="Add MINTME"
                         onClick={ showReceiveDialog }
                       />
                       <Button
