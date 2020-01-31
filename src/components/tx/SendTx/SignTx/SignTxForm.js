@@ -145,7 +145,7 @@ const SignTx = muiThemeable()((props) => {
       </div>
       <div style={{ paddingTop: '35px', display: 'flex', justifyContent: 'center' }}>
         <span style={{ color: props.muiTheme.palette.secondaryTextColor }}>
-          Plus {txFee} WEB for {tx.gasLimit} GAS.
+          Plus {txFee} MINTME for {tx.gasLimit} GAS.
         </span>
       </div>
       {
