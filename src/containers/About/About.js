@@ -40,19 +40,19 @@ class AboutClass extends React.Component {
         </div>
         <h2 style={{
           color: muiTheme.palette.primary1Color, fontWeight: '200', paddingBottom: '0px', marginBottom: '5px',
-        }}>Webchain Wallet</h2>
-        <div style={{ marginBottom: '20px' }}>{version}</div>
+        }}>MintMe Coin Wallet</h2>
+        <div style={{ marginBottom: '20px' }}>v{version}</div>
         <div style={{
           color: muiTheme.palette.secondaryTextColor, fontWeight: '100', lineHeight: '26px', maxWidth: '580px',
         }}>
           RPC Endpoint: {geth}<br/>
-          Webchain Vault: {connector}
+          MintMe Coin Vault: v{connector}
         </div>
         <div style={{ paddingTop: '60px', marginBottom: '60px' }}>
-          <Button onClick={onButtonClick} primary label='webchain.network' />
+          <Button onClick={onButtonClick} primary label='MintMe.com Coin' />
         </div>
         <div style={{ fontSize: '14px' }}>
-          <div style={{ paddingBottom: '5px' }}>Copyright &copy; 2018-{year} Webchain Network</div>
+          <div style={{ paddingBottom: '5px' }}>Copyright &copy; 2018-{year} MintMe.com Coin</div>
           <div> Licensed under <a onClick={onLicenseClick} style={styles.links} href="#">Apache License 2.0</a>
             {/* <span style={{ float: 'right', textAlign: 'right' }}> */}
             {/* <a onClick={onHelpClick} style={styles.links} href="#">Help & Support</a> */}
