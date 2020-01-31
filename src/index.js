@@ -12,12 +12,17 @@ import createLogger from './utils/logger';
 import About from './containers/About';
 import App from './containers/App';
 
+//add to manage event handler for onTouchTap in CloseButton properties
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
 const log = createLogger('index');
 
 const muiTheme = getMuiTheme(theme);
 
 function start() {
-  log.info('Starting Webchain Wallet...');
+  log.info('Starting MintMe Coin Wallet...');
+
+  if (typeof window !== 'undefined') injectTapEventPlugin();
 
   // set document background to theme canvas color
   const { canvasColor } = theme.palette;
