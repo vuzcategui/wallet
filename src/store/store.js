@@ -180,7 +180,7 @@ function newWalletVersionCheck() {
   getWalletVersion().then((versionDetails) => {
     if (!versionDetails.isLatest) {
       const params = [
-        `A new version of Webchain Wallet is available (${versionDetails.tag}).`,
+        `A new version of MintMe Coin Wallet is available (${versionDetails.tag}).`,
         'info',
         20 * 1000,
         'Update',
