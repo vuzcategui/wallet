@@ -78,7 +78,7 @@ export class Account extends React.Component {
                     {balance && <AccountBalance
                       fiatStyle={fiatStyle}
                       balance={ balance }
-                      symbol="WEB"
+                      symbol="MINTME"
                       showFiat={ showFiat }
                     />}
                     {!balance && 'loading...'}
@@ -90,7 +90,7 @@ export class Account extends React.Component {
                   <ButtonGroup>
                     <SecondaryMenu account={account} />
                     <Button
-                      label="Add WEB"
+                      label="Add MINTME"
                       onClick={ this.onAddEtcClick }
                       style={{background: 'rgb(33, 150, 243)'}}
                     />
