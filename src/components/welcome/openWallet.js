@@ -12,10 +12,10 @@ const Render = ({ numberOfAccounts, nextPage }) => {
       <Col xs={12}>
         <div style={{fontWeight: '300'}}>
           <p>
-            Welcome to Webchain Wallet<br/>
+            Welcome to MintMe Coin Wallet<br/>
           </p>
           <p>
-            Webchain is a transparent, web-mineable blockchain platform, made to support Decentralized Applications (DApps), where websites can serve as a hardware-independent alternative to secure ERC20 & ERC223 smart contracts​.
+            MintMe Coin is a transparent, web-mineable blockchain platform, made to support Decentralized Applications (DApps), where websites can serve as a hardware-independent alternative to secure ERC20 & ERC223 smart contracts​.
           </p>
         </div>
       </Col>
