@@ -90,7 +90,7 @@ export const TxView = (props) => {
     lineHeight: '19px',
     color: muiTheme.palette.secondaryTextColor,
   };
-  let symbol = 'WEB';
+  let symbol = 'MINTME';
   let balance = txValue;
 
   if (token) {
