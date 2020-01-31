@@ -32,7 +32,7 @@ const styles = {
 const Total = ({
   total, showFiat, fiatAmount, fiatCurrency, classes,
 }: Props) => {
-  let totalFormatted = `${total} WEB`;
+  let totalFormatted = `${total} MINTME`;
   if (showFiat && fiatAmount) {
     totalFormatted = `${totalFormatted} - ${fiatAmount} ${fiatCurrency}`;
   }
