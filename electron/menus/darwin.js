@@ -4,7 +4,7 @@ const createAboutPage = require('../about');
 
 module.exports = function (window) {
   return [{
-    label: 'Webchain',
+    label: 'MintMe',
     submenu: [
       {
         label: 'About',
