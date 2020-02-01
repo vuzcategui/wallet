@@ -91,7 +91,7 @@ export const PaperWallet = (props) => {
 
   const Wallet = (
     <div className={classes.container}>
-      <div className={classes.title}>MY WEBCHAIN WALLET</div>
+      <div className={classes.title}>MY MINTME COIN WALLET</div>
       <div className={classes.main}>
         <div className={classes.addressBlock}>
           <div>
